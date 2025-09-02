@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📝 Task Tracker
 
-## Getting Started
+A minimal full-stack Task Tracker built with Next.js (App Router) and API routes.
+This project demonstrates practical judgment, clean structure, and attention to UX — perfect for quick assessments or hackathon-style demos.
 
-First, run the development server:
+⚡ Features
 
-```bash
+➕ Create new tasks
+
+✅ Toggle task completion
+
+❌ Delete tasks
+
+🔍 Filter tasks (all, completed, pending, and search by query)
+
+📡 Full-stack setup with API routes
+
+🛠️ Tech Stack
+
+Frontend: Next.js (App Router), React, TailwindCSS
+
+Backend: Next.js API routes
+
+State Management: React hooks (useState, useEffect)
+
+📂 Folder Structure
+task-tracker/
+│── app/
+│   ├── api/
+│   │   └── todos/       # REST API for todos (GET, POST, PATCH, DELETE)
+│   ├── page.js          # Main UI
+│── components/
+│   ├── CreateTodoForm.js
+│   ├── Filters.js
+│   ├── TodoList.js
+│── public/
+│── styles/
+│── README.md
+
+🚀 Getting Started
+1️⃣ Clone the repo
+git clone https://github.com/Kanojiapriyanshu/task-tracker
+cd task-tracker
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open 👉 http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧪 API Endpoints
+Method	Endpoint	Description
+GET	/api/todos	Fetch all tasks (with filters)
+POST	/api/todos	Add a new task
+PATCH	/api/todos/:id	Toggle task completion
+DELETE	/api/todos/:id	Delete a task
+📸 Screenshots
 
-## Learn More
+(Add once UI is running)
 
-To learn more about Next.js, take a look at the following resources:
+👨‍💻 Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Priyanshu Kanojia
+Built for a 45-min full-stack technical assessment.
